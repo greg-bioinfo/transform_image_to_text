@@ -7,17 +7,12 @@ Created on Sat Aug 27 11:02:51 2022
 
 import cv2
 import numpy as np
-from scipy.stats import mode
-import pytesseract
-
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe"
 
 img=cv2.imread("text.jpg")
 img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 img= cv2.resize(img, (1200,1000), interpolation = cv2.INTER_AREA)
 width,height=img.shape
 
-print(img.shape)
 seuil=150
 
 mask=np.zeros((width,height),np.uint8)
