@@ -8,3 +8,4 @@ Then the program "detection_letter.py" detects the letters from the words detect
 The program "dataset_font.py" create a dataset with all lowercase and uppercase letters in multiple fonts.
 The program "CNN_letter.ipynb" train a cnn to recognize a photo of a letter.
 
+"main.py" is the final program to transform a photo from a text to a text file using the trained model.
